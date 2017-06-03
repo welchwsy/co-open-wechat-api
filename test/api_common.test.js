@@ -77,4 +77,23 @@ describe('api_common', function () {
       }
     });
   });
+
+  describe('getIndustry', function () {
+    it('should ok', async function () {
+      var api = new API(config.component_appid, config.component_appsecret, config.authorizer_appid, config.authorizer_refresh_token, config.componentVerifyTicket);
+      var industry = await api.getIndustry();
+      console.log('industry', industry)
+      expect(industry).to.only.have.keys('primary_industry', 'secondary_industry');
+    });
+
+    it('should not ok', async function () {
+      var api = new API('component_appid', 'component_appsecret', 'authorizer_appid', 'authorizer_refresh_token', 'componentVerifyTicket');
+      try {
+        await api.getIndustry();
+      } catch (err) {
+        expect(err).to.have.property('name', 'WeChatAPIError');
+        expect(err.message).to.contain('invalid appid hint');
+      }
+    });
+  });
 });
