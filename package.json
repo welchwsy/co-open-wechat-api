@@ -1,7 +1,7 @@
 {
   "name": "co-open-wechat-api",
-  "version": "0.0.1",
-  "description": "微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.0.0版本",
+  "version": "1.0.1",
+  "description": "微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.10.0版本",
   "main": "index.js",
   "scripts": {
     "test": "make test-all"
@@ -17,21 +17,22 @@
   ],
   "dependencies": {
     "co-fs": "^1.2.0",
-    "formstream": ">=0.0.8",
-    "httpx": "^2.1.1"
+    "formstream": "^1.1.0",
+    "httpx": "^2.2.4",
+    "json-bigint": "^1.0.0"
   },
   "devDependencies": {
-    "co-mocha": "*",
-    "coveralls": "*",
-    "eslint": "*",
+    "co-mocha": "^1.2.2",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.7.0",
     "expect.js": "*",
-    "mocha": "*",
+    "mocha": "^8.1.2",
     "muk": "*",
-    "nyc": "^10.2.0",
-    "rewire": "*",
+    "nyc": "^10.3.2",
+    "rewire": "^5.0.0",
     "travis-cov": "*"
   },
-  "author": "Jackson Tian",
+  "author": "welchwsy",
   "license": "MIT",
   "readmeFilename": "README.md",
   "directories": {

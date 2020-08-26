@@ -1,9 +1,9 @@
-微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.0.0版本(ES6版)
+微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.10.0版本(ES6版)
 ===========
-微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.0.0版本
+微信公共平台第三方平台Node库API，ES6版本,基于https://github.com/node-webot/co-wechat-api 3.10.0版本
 
 ## 功能列表
-- 发送客服消息（文本、图片、语音、视频、音乐、图文）
+- 发送客服消息（文本、图片、语音、视频、音乐、图文、小程序卡片）
 - 菜单操作（查询、创建、删除、个性化菜单）
 - 二维码（创建临时、永久二维码，查看二维码URL）
 - 分组操作（查询、创建、修改、移动用户到分组）
@@ -21,6 +21,7 @@
 - JSSDK服务端支持
 - 素材管理
 - 摇一摇周边
+- 小程序订阅消息（暂仅支持发送）
 
 详细参见[API文档](http://doxmate.cool/node-webot/co-wechat-api/api.html)
 
@@ -84,12 +85,3 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 
 ## 感谢
 感谢[node-webot](https://github.com/node-webot)
-
-## 捐赠
-如果您觉得Wechat对您有帮助，欢迎请作者一杯咖啡
-捐赠co-open-wechat-api
-![捐赠co-open-wechat-api](http://douhaoxinxi.oss-cn-shanghai.aliyuncs.com/weixin/mm_facetoface_collect_qrcode_1495453447447.png)
-捐赠wechat
-![捐赠wechat](https://cloud.githubusercontent.com/assets/327019/2941591/2b9e5e58-d9a7-11e3-9e80-c25aba0a48a1.png)
-
-或者[![](http://img.shields.io/gratipay/JacksonTian.svg)](https://www.gittip.com/JacksonTian/)
